@@ -44,5 +44,5 @@ resource "aws_instance" "app-instance" {
   vpc_security_group_ids = ["${aws_security_group.app-securitygroup.id}"]
 
   # the public SSH key
-  key_name = "${aws_key_pair.mykeypair1.key_name}"
+  key_name = "${aws_key_pair.mykey1pair.key_name}"
 }
